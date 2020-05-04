@@ -29,9 +29,11 @@
             },
             methods:{
                 generate:function(){
+                    this.array=[];
                     for(let i=0;i<this.size;++i){
-                        this.array[i]=Math.floor(Math.random()*10);
+                        Vue.set(this.array,i,Math.floor(Math.random()*10))
                     }
+                
                 }
             }
            
